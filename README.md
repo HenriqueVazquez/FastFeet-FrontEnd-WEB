@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Desafio 3: FastFeet empresa de entrega de encomendas!
+  Desafio Final web: FastFeet empresa de entrega de encomendas!
 </h3>
 
 <h3 align="center">
@@ -24,7 +24,7 @@
   </a>
 </p>
 
-<p>Front-end da empresa de entregas fast feet construido com react, consumindo a api rest do desafio passado criada em node, filtragem de entregas por item da incomendas, filtro de estado consumindo a api do IBGE, e de CEP do VIACEP, além de filtragem de entregador por nome, e de endereços por nome do destinatario.</p>
+<p>Front-end da empresa de entregas fast feet construido com react, consumindo a api rest do desafio passado criada em node, filtragem de entregas por item da encomendas, filtro de estado consumindo a api do IBGE, e de CEP do VIACEP, além de filtragem de entregador por nome, e de endereços por nome do destinatario.</p>
 
 <p>Front-end of the fast feet delivery company built with react, consuming the rest api of the past challenge created in node, filtering deliveries by order item, state filter consuming the IBGE and VIACEP CEP api, in addition to filtering of delivery person by name, and of addresses by name of recipient.</p>
 
