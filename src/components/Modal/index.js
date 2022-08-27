@@ -13,6 +13,7 @@ export default function Modal({ children }) {
         </button>
       }
       modal
+      nested
     >
       {children}
     </PopUp>

@@ -2,12 +2,18 @@
 import React, { useState, useEffect } from 'react';
 
 import HeaderList from '~/components/HeaderList';
+
 import api from '~/services/api';
 
 import ProblemItem from './ProblemItem';
 import { Container, Content, Grid, Button } from './styles';
 
 export default function Problems() {
+  const n = 3.14159;
+  const r = 150;
+  const a = n * r ** 2;
+  console.log(`A= ${a}`);
+
   const [page, setPage] = useState(1);
   const [problems, setProblems] = useState([]);
 
@@ -22,7 +28,7 @@ export default function Problems() {
   }
   useEffect(() => {
     loadProblems();
-	}, [page]); //eslint-disable-line
+  }, [page]); //eslint-disable-line
 
   return (
     <Container>

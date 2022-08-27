@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 import { Container, Label, Error, SelectInput } from './styles';
 
-export default function AsyncSelect({ name, label, styles, ...rest }) {
+export default function AsyncSelect({ idT, name, label, styles, ...rest }) {
   const selectRef = useRef(null);
   const { fieldName, defaultValue, registerField, error } = useField(name);
 
@@ -38,7 +38,7 @@ export default function AsyncSelect({ name, label, styles, ...rest }) {
   }, [fieldName, registerField, rest.isMulti]);
 
   return (
-    <Container>
+    <Container id={idT}>
       {label && <Label htmlFor={fieldName}>{label}</Label>}
       <SelectInput
         cacheOptions
@@ -55,6 +55,7 @@ export default function AsyncSelect({ name, label, styles, ...rest }) {
 
 AsyncSelect.propTypes = {
   name: PropTypes.string.isRequired,
+  idT: PropTypes.string.isRequired,
   label: PropTypes.string,
   styles: PropTypes.shape({}),
 };

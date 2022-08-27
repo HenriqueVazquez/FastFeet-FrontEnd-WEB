@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import { MdAdd } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
@@ -46,7 +47,6 @@ export default function Delivery() {
 
   useEffect(() => {
     handleSearchLoadDelivery();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
   return (
